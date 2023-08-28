@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Genearator</title>
+
+    <!-- favicon -->
+
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+
+    <!-- tailwind and dasiUI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style -->
+
+    <style>
+
+         body{
+
+            height: 900px;
+            background-color: rgb(132, 132, 3);
+         }
+
+    </style>
+
+</head>
+
+<body >
+    <!-- header part -->
+
+    <header>
+
+        <h1 class="text-3xl md:text-5xl text-center font-bold text-white pt-10 md:pt-16">Random Joke Genarator</h1>
+
+    </header>
+
+
+    <!-- main part -->
+
+    <main  class="grid justify-center mt-16 pb-16">
+
+
+        <div class="card  w-80 md:w-96 px-2 bg-black shadow-xl">
+
+
+            <!-- banner image -->
+            
+            <figure><img src="./logo.png" alt="Shoes" /></figure>
+            <div class="card-body">
+
+
+             <!-- jokes message -->
+             
+              <p id="joke" class="text-[#fdfdfd] text-base font-bold pb-5 justify-center">A man is smoking a cigarette and blowing smoke rings into the air. His girlfriend becomes irritated with the smoke and says "Can't you see the warning on the cigarette pack? Smoking is hazardous to your health!" to which the man replies, "I am a programmer. We don't worry about warnings; we only worry about errors."</p>
+
+              <!-- joke generate button -->
+
+              <div class="card-actions justify-center">
+                <button id="joke_button" class="btn bg-[#b7b70d] hover:btn-warning text-white font-bold outline-none border-none hover:outline-none hover:border-none hover:text-black hover:font-extrabold">Get Random Joke</button>
+              </div>
+
+            </div>
+          </div>
+
+
+    </main>
+
+
+    <!-- script added -->
+    <script src="api.js"></script>
+</body>
+
+</html>
